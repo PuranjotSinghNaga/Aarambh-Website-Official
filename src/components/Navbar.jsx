@@ -3,18 +3,20 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <header>
-      <NavLink
-        to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md "
-      >
-        <p className="blue-gradient_text">Aa</p>
-      </NavLink>
-
       <nav className="flex text-lg gap-7 font-medium">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "text-purple-800" : "text-black"
+          }
+        >
+          Home
+        </NavLink>
+
         <NavLink
           to="/team"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? "text-purple-800" : "text-black"
           }
         >
           Team
@@ -23,7 +25,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? "text-purple-800" : "text-black"
           }
         >
           Projects
@@ -32,10 +34,10 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? "text-purple-800" : "text-black"
           }
         >
-          Contact
+          Contact Us
         </NavLink>
       </nav>
     </header>
