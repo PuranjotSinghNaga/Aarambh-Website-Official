@@ -66,3 +66,28 @@
   min-height: 100vh;
   width: 51%;
 }
+.name-card {
+  font-family: "Source Code Pro";
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 30%;
+}
+
+.name-card-image {
+  border-radius: 50%;
+  object-fit: cover;
+  max-height: 9rem;
+  max-width: 9rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.field {
+  font-weight: 400;
+}
