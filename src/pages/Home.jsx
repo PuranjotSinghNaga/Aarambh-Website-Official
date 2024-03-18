@@ -1,3 +1,4 @@
+import WebgiViewer from "../components/WebgiViewer";
 import Jumbotron from "./sections/Jumbotron";
 import RocketAvionics from "./sections/RocketAvionics";
 import RocketGCS from "./sections/RocketGCS";
@@ -18,6 +19,7 @@ const Home = () => {
       <RocketPropulsion />
       <RocketSpaceSeparator />
       <RocketGCS />
+      <WebgiViewer />
     </div>
   );
 };

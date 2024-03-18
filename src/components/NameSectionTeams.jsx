@@ -11,7 +11,7 @@ const NameSectionTeams = (props) => {
         {props.email}
       </h3>
       <a href={props.linkedin}>
-        <img src={LinkedinLogo} alt="Linkedin" />
+        <img className="" src={LinkedinLogo} alt="Linkedin" />
       </a>
     </div>
   );
