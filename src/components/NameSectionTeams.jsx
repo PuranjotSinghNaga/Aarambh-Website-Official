@@ -4,7 +4,7 @@ const NameSectionTeams = (props) => {
   return (
     <div className="name-card">
       <img className="name-card-image" src={props.img} alt="" />
-      <h2 className="name">{props.name}</h2>
+      <h2 className="name ">{props.name}</h2>
       <h3 className="field text-center">
         {props.field}
         <br />

@@ -7,7 +7,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-purple-800" : "text-black"
+            isActive ? "text-purple-800" : "text-white"
           }
         >
           Home
@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavLink
           to="/team"
           className={({ isActive }) =>
-            isActive ? "text-purple-800" : "text-black"
+            isActive ? "text-purple-800" : "text-white"
           }
         >
           Team
@@ -25,7 +25,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-purple-800" : "text-black"
+            isActive ? "text-purple-800" : "text-white"
           }
         >
           Projects
@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-purple-800" : "text-black"
+            isActive ? "text-purple-800" : "text-white"
           }
         >
           Contact Us
