@@ -1,6 +1,6 @@
 const RocketRecovery = () => {
   return (
-    <div className="rocket-recovery-section wrapper-left">
+    <div className="rocket-recovery-section overlay-section wrapper-left">
       <h1 className="title-3">Recovery</h1>
       <p className="description">
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit

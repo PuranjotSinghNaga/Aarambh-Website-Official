@@ -2,7 +2,6 @@ import React, { useLayoutEffect, useRef } from "react";
 import { useGLTF, useScroll } from "@react-three/drei";
 import gsap from "gsap";
 import { useFrame } from "@react-three/fiber";
-import { useGSAP } from "@gsap/react";
 
 function Rocket(props) {
   const { nodes, materials } = useGLTF("../../public/rocket.glb");
@@ -16,70 +15,117 @@ function Rocket(props) {
 
   useLayoutEffect(() => {
     tl.current = gsap.timeline();
-    //Intro Animations
-    tl.current.from(ref.current.position, {
-      duration: 1,
-      y: -2,
-      ease: "power2.inOut",
-    });
-    // Recovery Section
-    tl.current.to(ref.current.position, {
-      duration: 1,
-      y: -3,
-      z: +3,
-    });
-    //Avionics Section
-    tl.current.to(ref.current.position, {
-      duration: 1,
-      y: -2,
-      z: +3,
-    });
-    //Structures Section
+    //Intro Section
+
     tl.current.to(ref.current.position, {
       duration: 0.5,
+      y: -1,
+      z: 0,
+    });
+
+    tl.current.to(
+      ref.current.rotation,
+      {
+        duration: 0.5,
+        z: Math.PI / 2,
+      },
+      "<",
+    );
+
+    // Recovery Section
+
+    tl.current.to(ref.current.position, {
+      duration: 0.5,
+      x: +3,
+      y: -3,
+      z: +1,
+    });
+
+    tl.current.to(
+      ref.current.rotation,
+      {
+        duration: 0.1,
+        z: 0,
+      },
+      "<",
+    );
+
+    //Avionics Section
+
+    tl.current.to(ref.current.position, {
+      duration: 0.1,
+      x: -2,
+      y: -2,
+      z: +3,
+    });
+
+    //Structures Section
+
+    tl.current.to(ref.current.position, {
+      duration: 0.5,
+      x: 2,
       y: 0,
       z: 0,
     });
 
-    tl.current.to(ref.current.rotation, {
-      y: 2 * Math.PI,
-      duration: 0.5,
-    });
+    tl.current.to(
+      ref.current.rotation,
+      {
+        y: 2 * Math.PI,
+        duration: 0.5,
+      },
+      "<",
+    );
 
     //Propulsion Section
+
     tl.current.to(ref.current.position, {
       y: 2.5,
       z: 1,
-      duration: 0.25,
+      duration: 0.5,
     });
 
-    tl.current.to(ref.current.rotation, {
-      x: -Math.PI / 3.5,
-      z: Math.PI / 20,
-      duration: 0.25,
-    });
-
-    tl.current.to(ref.current.rotation, {
-      x: 0,
-      z: 0,
-      duration: 0.25,
-    });
+    tl.current.to(
+      ref.current.rotation,
+      {
+        x: -Math.PI / 3.5,
+        z: Math.PI / 20,
+        duration: 0.5,
+      },
+      "<",
+    );
 
     tl.current.to(ref.current.position, {
       y: 0,
       z: 0,
-      duration: 0.25,
+      duration: 0.5,
     });
+
+    tl.current.to(
+      ref.current.rotation,
+      {
+        x: 0,
+        z: 0,
+        duration: 0.5,
+      },
+      "<",
+    );
+
     // Flying Animation
-    tl.current.to(ref.current.rotation, {
-      y: 6 * Math.PI,
-      duration: 2,
-    });
+
+    tl.current.to(
+      ref.current.rotation,
+      {
+        y: 6 * Math.PI,
+        duration: 2,
+      },
+      "<",
+    );
   }, []);
 
   return (
     <group {...props} dispose={null} ref={ref}>
-      <group name="Sketchfab_Scene" position={[0, -4, 0]} scale={0.412}>
+      <group name="Sketchfab_Scene" position={[-0.25, -4, 0]} scale={0.412}>
         <group name="Sketchfab_model" rotation={[Math.PI / 2, 0, 0]}>
           <group
             name="Electron_Fairing_2"

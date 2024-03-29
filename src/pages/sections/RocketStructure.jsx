@@ -1,7 +1,7 @@
 const RocketStructure = () => {
   return (
-    <div className="rocket-structure-section wrapper-left">
-      <h1 className="title-3">Structure</h1>
+    <div className="rocket-structure-section wrapper-left w-[51%]">
+      <h1 className="title-3  ">Structure</h1>
       <p className="description">
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
         enim labore culpa sint ad nisi Lorem pariatur mollit ex esse

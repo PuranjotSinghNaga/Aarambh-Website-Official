@@ -6,10 +6,9 @@
 * gradient from 510e85 to c98adf / 862ccc*/
 body {
   background-color: #0b0323;
-}
-
-.jumbotron-section {
-  background-image: url("./assets/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg");
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .title {
@@ -31,7 +30,14 @@ body {
 .title-3 {
   @apply bg-gradient-to-r from-[#510e85] to-[#c98adf] bg-clip-text text-transparent;
   font-family: "Source Code Pro";
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+.title-4 {
+  @apply bg-gradient-to-r from-[#510e85] to-[#c98adf] bg-clip-text text-transparent;
+  font-family: "Source Code Pro";
+  font-size: 2rem;
   font-weight: 500;
   margin: 1rem;
 }
@@ -68,6 +74,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 51%;
+}
+.overlay-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
 }
 .name-card {
   font-family: "Source Code Pro";

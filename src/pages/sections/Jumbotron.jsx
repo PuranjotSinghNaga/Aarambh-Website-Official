@@ -1,8 +1,7 @@
 const Jumbotron = () => {
   return (
-    <div className="jumbotron-section wrapper flex flex-col justify-center text-center ">
+    <div className="w-[100vw] h-[100vh] flex items-center justify-center flex-col border-black">
       <h1 className="title ">Aarambh Rocketry</h1>
-      <p>High Powered Amateur Rocketry Enthusiasts</p>
     </div>
   );
 };
