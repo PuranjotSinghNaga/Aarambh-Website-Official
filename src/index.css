@@ -4,10 +4,40 @@
 
 /*aarambh purple 
 * gradient from 510e85 to c98adf / 862ccc*/
-body {
-  background-color: #0b0323;
+:root {
+  --dark-purple: #510e85;
+  --light-purple: #c98adf;
+  --light-yellow: #fcbf3b;
+  --dark-yellow: #f17f51;
 }
 
+body {
+  background-color: #0b0323;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--dark-purple);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: var(--light-yellow);
+}
 .title {
   @apply bg-gradient-to-r from-[#510e85] to-[#c98adf] bg-clip-text text-transparent;
   font-family: "Source Code Pro";
@@ -35,6 +65,13 @@ body {
   @apply bg-gradient-to-r from-[#510e85] to-[#c98adf] bg-clip-text text-transparent;
   font-family: "Source Code Pro";
   font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+.title-3-yellow {
+  @apply bg-gradient-to-r from-[color:var(--dark-yellow)] to-[color:var(--light-yellow)] bg-clip-text text-transparent;
+  font-family: "Source Code Pro";
+  font-size: 3rem;
   font-weight: 500;
   margin: 1rem;
 }

@@ -2,9 +2,9 @@ const RocketGCS = () => {
   return (
     <div className="rocket-gcs-section wrapper-left">
       <h1 className="title-3">
-        Ground Station
+        Ground Control
         <br />
-        Control(GCS)
+        Station(GCS)
       </h1>
       <p className="description">
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit

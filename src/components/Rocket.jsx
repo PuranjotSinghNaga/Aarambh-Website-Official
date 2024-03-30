@@ -18,7 +18,7 @@ function Rocket(props) {
     //Intro Section
 
     tl.current.to(ref.current.position, {
-      duration: 0.5,
+      duration: 0.6,
       y: -1,
       z: 0,
     });
@@ -38,7 +38,7 @@ function Rocket(props) {
       duration: 0.3,
       x: +3,
       y: -3,
-      z: +1,
+      z: +2,
     });
 
     tl.current.to(
@@ -83,7 +83,7 @@ function Rocket(props) {
       y: 2.5,
       z: 1,
       x: -1,
-      duration: 0.5,
+      duration: 0.4,
     });
 
     tl.current.to(
@@ -115,9 +115,11 @@ function Rocket(props) {
     // Flying Animation
 
     tl.current.to(
-      ref.current.rotation,
+      ref.current.position,
       {
-        y: 6 * Math.PI,
+        y: 0,
+        x: 3,
+        z: 1,
         duration: 2,
       },
       "<",

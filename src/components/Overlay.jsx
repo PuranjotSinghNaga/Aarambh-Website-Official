@@ -6,7 +6,6 @@ import RocketIntro from "../pages/sections/RocketIntro";
 import RocketAvionics from "../pages/sections/RocketAvionics";
 import RocketStructure from "../pages/sections/RocketStructure";
 import RocketPropulsion from "../pages/sections/RocketPropulsion";
-import RocketSpaceSeparator from "../pages/sections/RocketSpaceSeparator";
 import RocketGCS from "../pages/sections/RocketGCS";
 const Overlay = () => {
   return (
@@ -17,7 +16,6 @@ const Overlay = () => {
       <RocketAvionics />
       <RocketStructure />
       <RocketPropulsion />
-      <RocketSpaceSeparator />
       <RocketGCS />
     </Scroll>
   );

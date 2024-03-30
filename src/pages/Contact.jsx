@@ -3,14 +3,34 @@ import NameSectionTeams from "../components/NameSectionTeams";
 import profilePic from "../assets/profile-pic-2.jpg";
 import profilePic2 from "../assets/profilepic3.webp";
 import profilePicWomen from "../assets/profilepic-women.webp";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const Contact = () => {
+  const tl = gsap.timeline();
+  useGSAP(() => {
+    tl.from(".gsaptext", {
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.5,
+    });
+    tl.from(".gsapimg", {
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 1,
+        axis: "x",
+      },
+    });
+  }, []);
   return (
-    <div className="flex items-center justify-center flex-col">
-      <h1 className="title">Contact Us</h1>
-      <h3 className="title-3">For Mentorship or Sponsorship</h3>
+    <div className="flex items-center justify-center flex-col py-8">
+      <h1 className="title gsaptext">Contact Us</h1>
+      <h3 className="title-3 gsaptext">For Mentorship or Sponsorship</h3>
       <div className="w-full flex items-center justify-evenly">
         <NameSectionTeams
+          className="gsapimg"
           img={profilePic}
           name="Aditya Vinod Ingle"
           field="Team Lead"
@@ -18,6 +38,7 @@ const Contact = () => {
         />
 
         <NameSectionTeams
+          className="gsapimg"
           img={profilePic2}
           name="Puranjot Singh Naga"
           field="Website Lead"
@@ -26,6 +47,7 @@ const Contact = () => {
         />
 
         <NameSectionTeams
+          className="gsapimg"
           img={profilePicWomen}
           name="Vidhi Arya"
           field="Team Manager"
