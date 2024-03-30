@@ -6,9 +6,6 @@
 * gradient from 510e85 to c98adf / 862ccc*/
 body {
   background-color: #0b0323;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .title {
@@ -97,8 +94,8 @@ body {
 .name-card-image {
   border-radius: 50%;
   object-fit: cover;
-  max-height: 9rem;
-  max-width: 9rem;
+  height: 9rem;
+  width: 9rem;
 }
 
 .name {

@@ -10,7 +10,7 @@ import Model from "../components/Model";
 
 const Home = () => {
   return (
-    <div>
+    <div className="m-0 p-0 overflow-hidden">
       <Model />
     </div>
   );

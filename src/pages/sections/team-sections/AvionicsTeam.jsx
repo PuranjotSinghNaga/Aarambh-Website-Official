@@ -1,6 +1,7 @@
 import React from "react";
 import NameSectionTeams from "../../../components/NameSectionTeams";
 import profilepicdemo from "../../../assets/profile-demo (1).jpeg";
+import profilepic3 from "../../../assets/profilepic3.avif";
 import AvionicsLogo from "../../../assets/AvionicsLogo.png";
 const AvionicsTeam = () => {
   return (
@@ -13,7 +14,7 @@ const AvionicsTeam = () => {
 
         <div className="lead-namebox">
           <NameSectionTeams
-            img={profilepicdemo}
+            img={profilepic3}
             name="Puranjot Singh Naga "
             field="Avionics Lead"
             linkedin="https://www.linkedin.com/in/puranjot-singh-92a55326b/"

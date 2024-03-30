@@ -1,5 +1,6 @@
 import NameSectionTeams from "../../../components/NameSectionTeams";
 import profilepicdemo from "../../../assets/profile-demo (1).jpeg";
+import profilepic2 from "../../../assets/profilepic4.avif";
 import GCSLogo from "../../../assets/GCSLogo.png";
 
 const GCSTeam = () => {
@@ -13,7 +14,7 @@ const GCSTeam = () => {
 
         <div className="lead-namebox">
           <NameSectionTeams
-            img={profilepicdemo}
+            img={profilepic2}
             name="Puranjot Singh Naga "
             field="Ground Station Control"
             linkedin="https://www.linkedin.com/in/puranjot-singh-92a55326b/"
