@@ -35,7 +35,7 @@ function Rocket(props) {
     // Recovery Section
 
     tl.current.to(ref.current.position, {
-      duration: 0.5,
+      duration: 0.3,
       x: +3,
       y: -3,
       z: +1,
@@ -53,8 +53,8 @@ function Rocket(props) {
     //Avionics Section
 
     tl.current.to(ref.current.position, {
-      duration: 0.1,
-      x: -2,
+      duration: 0.5,
+      x: -1,
       y: -2,
       z: +3,
     });
@@ -82,6 +82,7 @@ function Rocket(props) {
     tl.current.to(ref.current.position, {
       y: 2.5,
       z: 1,
+      x: -1,
       duration: 0.5,
     });
 
@@ -90,7 +91,7 @@ function Rocket(props) {
       {
         x: -Math.PI / 3.5,
         z: Math.PI / 20,
-        duration: 0.5,
+        duration: 0.3,
       },
       "<",
     );
