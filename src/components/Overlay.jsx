@@ -7,6 +7,7 @@ import RocketAvionics from "../pages/sections/RocketAvionics";
 import RocketStructure from "../pages/sections/RocketStructure";
 import RocketPropulsion from "../pages/sections/RocketPropulsion";
 import RocketGCS from "../pages/sections/RocketGCS";
+import FinishingSection from "../pages/sections/FinishingSection";
 const Overlay = () => {
   return (
     <Scroll html>
@@ -17,6 +18,7 @@ const Overlay = () => {
       <RocketStructure />
       <RocketPropulsion />
       <RocketGCS />
+      <FinishingSection />
     </Scroll>
   );
 };

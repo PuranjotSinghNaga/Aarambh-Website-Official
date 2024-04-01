@@ -120,7 +120,7 @@ function Rocket(props) {
         y: 0,
         x: 3,
         z: 1,
-        duration: 2,
+        duration: 1,
       },
       "<",
     );

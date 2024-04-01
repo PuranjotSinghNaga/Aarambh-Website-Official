@@ -14,7 +14,7 @@ const ModelView = () => {
         enablePan={false}
         enableRotate={false}
       />
-      <ScrollControls pages={7.1} damping={0.25}>
+      <ScrollControls pages={7.8} damping={0.25}>
         <Overlay />
         <Rocket />
       </ScrollControls>

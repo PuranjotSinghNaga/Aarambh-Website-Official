@@ -2,6 +2,9 @@ import React from "react";
 import NameSectionTeams from "../../../components/NameSectionTeams";
 import profilepicdemo from "../../../assets/profile-demo (1).jpeg";
 import PropulsionLogo from "../../../assets/PropulsionLogo.png";
+import { members } from "../../../constants";
+import LeadFilter from "../../../utils/lead-filter";
+import MemberMapper from "../../../utils/MemberMapper";
 
 const PropulsionTeam = () => {
   return (
@@ -13,29 +16,10 @@ const PropulsionTeam = () => {
         </legend>
 
         <div className="lead-namebox">
-          <NameSectionTeams
-            img={profilepicdemo}
-            name="Puranjot Singh Naga "
-            field="Propulsion Lead"
-            linkedin="https://www.linkedin.com/in/puranjot-singh-92a55326b/"
-            email="puranjotsinghnaga@gmail.com"
-          />
+          <LeadFilter field="Propulsion" />
         </div>
         <div className="member-namebox">
-          <NameSectionTeams
-            img={profilepicdemo}
-            name="Puranjot Singh Naga "
-            field="Propulsion Lead"
-            linkedin="https://www.linkedin.com/in/puranjot-singh-92a55326b/"
-            email="puranjotsinghnaga@gmail.com"
-          />
-          <NameSectionTeams
-            img={profilepicdemo}
-            name="Puranjot Singh Naga "
-            field="Propulsion Lead"
-            linkedin="https://www.linkedin.com/in/puranjot-singh-92a55326b/"
-            email="puranjotsinghnaga@gmail.com"
-          />
+          <MemberMapper field="Propulsion" />
         </div>
       </fieldset>
     </div>

@@ -25,7 +25,7 @@ const Projects = () => {
 
   let [index, setIndex] = useState(0);
   return (
-    <div className="w-[100vw] h-[100vh] py-10">
+    <div className="w-[100vw] h-[100vh] py-20">
       <div className="flex items-center justify-center">
         <h1 className="title-2 gsaptext">Our Projects</h1>
       </div>
